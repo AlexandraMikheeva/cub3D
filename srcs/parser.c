@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   parser.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ctobias <ctobias@student.42.fr>            +#+  +:+       +#+        */
+/*   By: olydden <olydden@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/09 15:48:48 by ctobias           #+#    #+#             */
-/*   Updated: 2020/10/22 17:11:48 by ctobias          ###   ########.fr       */
+/*   Created: 2020/11/18 18:43:33 by olydden           #+#    #+#             */
+/*   Updated: 2020/11/18 19:21:17 by olydden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./cub.h"
+#include "cub.h"
 
 int		parse_file(t_settings *settings)
 {

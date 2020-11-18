@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: olydden <olydden@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/09 16:36:39 by ctobias           #+#    #+#             */
-/*   Updated: 2020/11/18 14:22:25 by olydden          ###   ########.fr       */
+/*   Created: 2020/11/18 18:45:06 by olydden           #+#    #+#             */
+/*   Updated: 2020/11/18 19:20:00 by olydden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define CUB_H
 # include <fcntl.h>
 # include <stdlib.h>
-# include "../mlx/mlx.h"
+# include <mlx.h>
 # include "../libft/includes/libft.h"
 # include <errno.h>
 # include <stdio.h>
@@ -31,7 +31,6 @@
 # define MALLOC_ERROR -5
 # define FORMAT_ERROR -7
 # define ARG_ERROR -8
-# define BUFFER_SIZE 32
 
 typedef struct		s_map
 {
@@ -215,4 +214,5 @@ int					win_close(t_mlx *mlx);
 void				get_ray_delta(t_ray *ray);
 void				skip_n(char **line, int fd);
 int					get_next_line(int fd, char **line);
+
 #endif

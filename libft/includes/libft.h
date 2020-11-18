@@ -6,7 +6,7 @@
 /*   By: olydden <olydden@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/25 22:36:11 by olydden           #+#    #+#             */
-/*   Updated: 2020/11/18 13:54:37 by olydden          ###   ########.fr       */
+/*   Updated: 2020/11/18 19:04:59 by olydden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,16 +77,6 @@ void				ft_lstclear(t_list **lst, void (*del)(void*));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 								void (*del)(void *));
-// char				*ft_copy(char *dest, char *src);
-// int					check_result(int read_bytes, char **storage, char **n);
-// void				ft_newstr(char *n, char **line, char **storage);
-// char				*check_storage(char *store, char **line);
-// int					get_next_line(int fd, char **line);
-// char				*ft_strdup(const char *s);
-// size_t				ft_strlen(const char *s);
-// char				*ft_strchr(const char *s, int c);
-// char				*ft_strjoin(char const *s1, char const *s2);
-// void				ft_free_gnl(char **s);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp_end(const char *s1, const char *s2, size_t n);
 void				ft_putstr_fd(char const *s, int fd);

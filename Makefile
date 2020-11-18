@@ -6,7 +6,7 @@
 #    By: olydden <olydden@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/11 19:50:06 by olydden           #+#    #+#              #
-#    Updated: 2020/11/18 15:59:48 by olydden          ###   ########.fr        #
+#    Updated: 2020/11/18 19:34:20 by olydden          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,11 +18,9 @@ HEADER = includes
 
 FLAGS_C = -g -O3 -Wall -Wextra -Werror
 
-FLAGS_MLX = -Lmlx -lmlx -lm
+FLAGS_MLX = -lmlx -lm -framework OpenGL -framework AppKit
 
 DIR_LIBFT = libft
-
-DIR_MLX = mlx
 
 DIR_S = srcs
 
@@ -53,9 +51,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@make -C $(DIR_LIBFT)
-	@make -C $(DIR_MLX)
-	# @mv $(DIR_MLX)/libmlx.dylib . 
-	$(CC) -o $@ $^ $(DIR_LIBFT)/libft.a $(FLAGS_MLX)
+	@$(CC) -o $@ $^ $(FLAGS_MLX) $(DIR_LIBFT)/libft.a
 
 $(DIR_O)/%.o: $(DIR_S)/%.c $(HEADER)/cub.h
 	@mkdir -p $(DIR_O)
@@ -65,7 +61,6 @@ clean:
 	@rm -f $(OBJS) screenshot.bmp
 	@rm -rf $(DIR_O)
 	@make clean -C $(DIR_LIBFT)
-	@make clean -C $(DIR_MLX)
 
 fclean: clean
 	@rm -f $(NAME)

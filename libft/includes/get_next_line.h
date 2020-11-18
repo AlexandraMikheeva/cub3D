@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: olydden <olydden@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/31 17:25:15 by ctobias           #+#    #+#             */
-/*   Updated: 2020/11/18 13:54:59 by olydden          ###   ########.fr       */
+/*   Created: 2020/11/18 18:45:17 by olydden           #+#    #+#             */
+/*   Updated: 2020/11/18 19:09:15 by olydden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include <stdlib.h>
-// # include "libft.h"
 
 char		*ft_strchr(const char *s, int c);
 char		*ft_strjoin(char const *s1, char const *s2);
